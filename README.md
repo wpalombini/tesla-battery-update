@@ -6,7 +6,7 @@ This AWS Lambda function automatically adjusts the minimum battery reserve perce
 
 The system implements a time-based battery management strategy that:
 
-- **At midnight AEST (2:00 PM UTC)**: Sets the battery reserve to **100%**, maximizing battery storage during off-peak hours when electricity rates are typically lower
+- **At midnight AEST (2:00 PM UTC)**: Sets the battery reserve to **40%**, maximizing battery storage during off-peak hours when electricity rates are typically lower
 - **At 6:00 AM AEST (8:00 PM UTC)**: Reduces the battery reserve to **20%**, allowing the stored energy to be used throughout the day while maintaining a minimum backup reserve
 
 This approach helps reduce electricity costs by storing energy during cheaper off-peak periods and making it available for consumption during peak rate hours.
@@ -15,7 +15,7 @@ This approach helps reduce electricity costs by storing energy during cheaper of
 
 The system consists of two scheduled Lambda functions:
 
-1. **Midnight Reserve (100%)**: Triggered at midnight AEST to maximize battery charging during off-peak hours
+1. **Midnight Reserve (40%)**: Triggered at midnight AEST to maximize battery charging during off-peak hours
 2. **Morning Reserve (20%)**: Triggered at 6:00 AM AEST to release stored energy for daily usage while keeping essential backup power
 
 ## Architecture

@@ -19,7 +19,7 @@ functions:
       - schedule:
           rate: cron(0 14 * * ? *) # Midnight AEST
           input:
-            reservePercent: 100
+            reservePercent: 40
 
   setMorningReserve:
     handler: handler.handler
