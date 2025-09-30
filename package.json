@@ -1,0 +1,16 @@
+{
+  "name": "tesla-battery-update",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.145"
+  },
+  "devDependencies": {
+    "serverless": "^3.40.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-esbuild": "^1.52.1",
+    "typescript": "^5.3.3"
+  }
+}
